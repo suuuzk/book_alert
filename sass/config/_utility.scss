@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "compass";
+
+//**********************************************
+//					mixin
+//**********************************************/
+
+//ユーティリティ
+
+@mixin clearfix {
+  zoom: 1;
+  &:before,
+		&:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin anime($all,$s,$effect){
+	-webkit-transition:$all $s $effect;
+	-moz-transition:$all $s $effect;
+	-o-transition:$all $s $effect;
+	transition:$all $s $effect;
+}
+@mixin lheight($size) {
+	line-height: $size;
+	height: $size;
+}
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacityIE: $opacity * 100;
+	filter: alpha(opacity=$opacityIE);
+}
+@mixin bggrd($bg_color,$from,$to){
+  background: $bg_color;
+  @include background(linear-gradient(top, $from 0%, $to 100%));
+}
+//**********************************************
+//					サイト固有変数
+//**********************************************
+
+
+//font
+$fontsize: 14px;
+$basecolor: #555;

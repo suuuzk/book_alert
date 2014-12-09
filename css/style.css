@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* line 8, ../sass/config/_cssreset.scss */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, dl, dt, dd, ol, ul, li,
+form, label, table, caption, tbody, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+/* line 15, ../sass/config/_cssreset.scss */
+h1, h2, h3, h4, h5, h6, table, td, th {
+  font-size: 14px;
+}
+
+/* line 18, ../sass/config/_cssreset.scss */
+body, input, select {
+  line-height: 1;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Arial, Helvetica,sans-serif;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* line 24, ../sass/config/_cssreset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 27, ../sass/config/_cssreset.scss */
+img {
+  vertical-align: bottom;
+}
+
+/* line 30, ../sass/config/_cssreset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 35, ../sass/config/_cssreset.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 39, ../sass/config/_cssreset.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 42, ../sass/config/_cssreset.scss */
+.clearfix {
+  *zoom: 1;
+}

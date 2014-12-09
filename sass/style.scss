@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+//ユーティリティ。実態の無いmixinとか変数しか書かないこと。
+@import "config/_utility.scss";
+
+//リセッタ。
+@import "config/_cssreset.scss";
+
+
